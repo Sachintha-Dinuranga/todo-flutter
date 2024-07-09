@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,6 +11,18 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: Colors.blue[100],
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: Text(
+          "TaskFlow",
+          style: GoogleFonts.roboto(
+              textStyle:
+                  const TextStyle(fontWeight: FontWeight.bold, fontSize: 26)),
+        ),
+        centerTitle: true,
+      ),
+    );
   }
 }
